@@ -13,8 +13,6 @@ function smake.build()
 
     spinner.Call(compile, 'Building', '✅ Built')
 
-    print(makeCommand())
-
     runIn('build', 'ar rvs libhcss.a *.o')
     run('rm ./*.o')
 end
