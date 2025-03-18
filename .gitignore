@@ -1,0 +1,5 @@
+.vscode/
+build/
+build.ninja
+libhcss.a
+.DS_Store
