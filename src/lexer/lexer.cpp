@@ -30,7 +30,7 @@ inline bool isSpace(wchar_t c) {
 
 #pragma region Lexer
 
-vector<Token> Lexer::lex() {
+vector<Token>& Lexer::lex() {
 	while (reader.peek() != EOF) {
         current = reader.get();
 		switch (current) {

@@ -16,7 +16,7 @@ using std::wstring;
 class Lexer {
 	public:
 		vector<Token> tokens;
-		vector<Token> lex();
+		vector<Token>& lex();
 		Lexer(std::istream& stream)
 			: reader(stream)
 		{};
